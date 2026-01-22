@@ -8,7 +8,6 @@ class RegistrationPageLocators:
     ERROR_PASSWORD = (By.XPATH, ".//p[contains(@class, 'input__error')]") 
 
 class LoginPageLocators:
-  
     EMAIL_INPUT = (By.XPATH, ".//input[@name='name']")
     PASSWORD_INPUT = (By.XPATH, ".//input[@type='password']")
     LOGIN_BUTTON = (By.XPATH, ".//button[text()='Войти']")
@@ -17,9 +16,13 @@ class LoginPageLocators:
     PERSONAL_ACCOUNT_BUTTON = (By.XPATH, ".//p[contains(text(),'Личный Кабинет')]")
     REGISTRATION_FORM_LOGIN_LINK = (By.XPATH, ".//a[@href='/login']")
     FORGOT_PASSWORD_LOGIN_LINK = (By.XPATH, ".//a[@href='/login']")
+    # НОВЫЙ ЛОКАТОР
+    ORDER_BUTTON = (By.XPATH, ".//button[text()='Оформить заказ']")
 
 class ProfilePageLocators:
     LOGOUT_BUTTON = (By.XPATH, ".//button[text()='Выход']")
+    # НОВЫЙ ЛОКАТОР
+    SAVE_BUTTON = (By.XPATH, ".//button[text()='Сохранить']")
 
 class ConstructorPageLocators:
     CONSTRUCTOR_TAB = (By.XPATH, ".//p[text()='Конструктор']")
@@ -28,3 +31,5 @@ class ConstructorPageLocators:
     SAUCES_TAB = (By.XPATH, ".//span[text()='Соусы']/..")
     FILLINGS_TAB = (By.XPATH, ".//span[text()='Начинки']/..")
     ACTIVE_TAB_CLASS = "tab_tab_type_current"
+    # НОВЫЕ ЛОКАТОРЫ
+    CONSTRUCTOR_HEADER = (By.XPATH, ".//h1[text()='Соберите бургер']")
